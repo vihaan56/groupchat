@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="full-container">
+            <div class="chat_top_container">Chat Room</div>
+            <div id="chat_contain" class="chat_container">
+
+               
+                <!-- <div class="left_message"><span class="left_text">vihaan singla</span></div>
+
+                <div class="left_message"><span class="left_text">vihaan singla</span></div> -->
+
+         <!--      <div class="right-bubble">
+                    <div class="right_message">
+                        <div class="heading-text">vihaan singla</div>
+                        <span class="right_text">vihaansinglawefowefjowofwoefowefjfwjofoojofjofjo</span>
+                    </div>
+                </div>
+                <div class="message-for-left">vihaan singla left</div>
+                <div class="message-for-join">vihaan singla joined</div>
+
+                <div class="left-bubble">
+                    <div class="left_message"><span class="left_text">khush singla</span></div>
+                </div>
+                <div class="left-bubble">
+                    <div class="left_message"><span class="left_text">vihaan singla</span></div>
+                </div>
+                <div class="right-bubble">
+                    <div class="right_message">
+                        <div class="heading-text">vihaan singla</div>
+                        <span class="right_text">vihaansinglawefowefjowofwoefowefjfwjofoojofjofjo</span>
+                    </div>
+                </div>   -->
+
+
+            </div>
+            <div class="textarea_container">
+                <div class="textarea_mid_container">
+                    <form id="form" class="form" method="post" action="">
+                        <textarea id="textarea" autocorrect="off" autocapitalize="off" spellcheck="false" class="textarea" reciever_id="<?php echo $id;  ?>" placeholder="Message..." rows="1"></textarea>
+                        <button type="submit" id="send" class="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</body>
+
+<!-- <script src="chat_script.js"></script> -->
+
+</html>
